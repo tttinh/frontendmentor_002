@@ -42,7 +42,9 @@ Users should be able to:
 
 ### What I learned
 
-Create a button that when users hover on it will make it become outline. At first, I used the `border` property. But then, I realized this property will make the parent container change its size when I hover the button. Finally, I found `outline` property can help me. :D
+Create a button that when users hover on it will make it become outline. At first, I used the `border` property. But then, I realized this property will make the parent container change its size when I hover the button. Finally, I found `outline` property can help me. But once again, this solution only works on Firefox and it failed on Edge :(.
+
+Thanks for the comment of @aUnicornDev on Frontendmentor. `box-shadow` for the rescue!!!
 
 ```css
 .btn {
@@ -56,7 +58,8 @@ Create a button that when users hover on it will make it become outline. At firs
 .btn:hover {
   color: var(--clr-white-900);
   background-color: transparent;
-  outline: 2px solid var(--clr-white-900);
+  /* outline: 2px solid var(--clr-white-900); */
+  box-shadow: inset 0px 0px 0px 2px var(--clr-white-900);
 }
 ```
 

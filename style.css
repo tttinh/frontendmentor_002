@@ -76,7 +76,7 @@ p {
 .btn:hover {
   color: var(--clr-white-900);
   background-color: transparent;
-  outline: 2px solid var(--clr-white-900);
+  box-shadow: inset 0px 0px 0px 2px var(--clr-white-900);
 }
 
 .bg-bright-orange {
